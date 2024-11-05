@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LabyrinthGame.Tests
-build_property.ProjectDir = C:\Users\Shaya\Desktop\LabyrinthGame\LabyrinthGame.Tests\
+build_property.ProjectDir = E:\OneDrive - Brights\TMP\GroupProjects\LabyrinthGame\LabyrinthGame.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
