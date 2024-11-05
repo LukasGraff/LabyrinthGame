@@ -1,0 +1,33 @@
+{
+    "scenario" : [
+        {
+            "id1": 1,
+            "textScenario" : " Du kommer till en korsning, vänster eller höger?",
+            "solutionScenario1" : [
+                {
+                    "solutionOne" : "Vänster",
+                    "id" : 2
+                },
+                {
+                    "solutionOne" : "Höger",
+                    "id" : 3
+                }
+
+            ],
+            "id2": 2,
+            "textScenario2" : " Rakt fram eller höger",
+            "solutionScenario2" : [
+                {
+                    "solutionOne" : "Rakt fram",
+                    "id" : 4
+                   
+                },
+                {
+                    "solutionOne" : "Höger",
+                    "id" : 5
+                }
+
+            ]
+        }
+    ]
+}
