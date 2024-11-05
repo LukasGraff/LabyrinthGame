@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj": {}
+    "C:\\Users\\Shaya\\Desktop\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj": {}
   },
   "projects": {
-    "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj": {
+    "C:\\Users\\Shaya\\Desktop\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Shaya\\Desktop\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj",
         "projectName": "LabyrinthGame.Core",
-        "projectPath": "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj",
-        "packagesPath": "C:\\Users\\R1\\.nuget\\packages\\",
-        "outputPath": "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\obj\\",
+        "projectPath": "C:\\Users\\Shaya\\Desktop\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj",
+        "packagesPath": "C:\\Users\\Shaya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shaya\\Desktop\\LabyrinthGame\\LabyrinthGame.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\R1\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Shaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
