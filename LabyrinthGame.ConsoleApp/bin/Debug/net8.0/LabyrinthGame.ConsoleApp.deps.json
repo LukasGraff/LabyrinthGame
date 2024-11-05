@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LabyrinthGame.ConsoleApp/1.0.0": {
+        "dependencies": {
+          "LabyrinthGame.Core": "1.0.0"
+        },
+        "runtime": {
+          "LabyrinthGame.ConsoleApp.dll": {}
+        }
+      },
+      "LabyrinthGame.Core/1.0.0": {
+        "runtime": {
+          "LabyrinthGame.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LabyrinthGame.ConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LabyrinthGame.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
