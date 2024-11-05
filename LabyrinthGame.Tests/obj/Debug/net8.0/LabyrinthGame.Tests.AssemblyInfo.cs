@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LabyrinthGame.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e9c7eff8cc10d78f09395acbf621f79b7baf33f")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d0b47c8b8821a5e8f7e6963beb0f693ebd09d44")]
->>>>>>> master
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+328af53df7ec6af1423ec3c6cbfdb960ec35b529")]
 [assembly: System.Reflection.AssemblyProductAttribute("LabyrinthGame.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LabyrinthGame.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

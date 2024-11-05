@@ -1,24 +1,28 @@
 ﻿namespace LabyrinthGame.Core;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
-
-public class LabyrinthGame()
+public class Scenario
 {
+    public int Id { get; set; }
 
+    public string Description { get; set; }
 
+    [JsonPropertyName("options")] // Kanske behövs beroende på namnen i JSON
+    public List<Option> Options { get; set; }
 }
 
-public class ScenarioList {
-    public List<Scenario>? Scenarios {get; set;}
+public class Option
+{
+    [JsonPropertyName("OptionsText")]
+    public string OptionsText { get; set; }
+
+    [JsonPropertyName("next_scenario_id")]
+    public int NextScenarioId { get; set; }
 }
 
-public class Scenario {
-    public int ScenarioID { get; set; }
-    public string? ScenarioDescription {get; set;}
-    public List<Option>? Options { get; set; }
-}
-
-public class Option {
-    public int NextOptionID {get; set;}
-    public string? OptionText {get; set;}
+public class ScenarioCollection
+{
+    [JsonPropertyName("scenarios")]
+    public List<Scenario> Scenarios { get; set; }
 }

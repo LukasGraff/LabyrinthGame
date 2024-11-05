@@ -1,75 +1,74 @@
 {
-    "scenarios": [
-      {
-        "id": 1,
-        "description": "Du står vid en korsning i labyrinten. Till vänster ser du en smal gång med ett svagt ljus i slutet, och till höger hör du ljudet av rinnande vatten.",
-        "options": [
-          {
-            "option": "Gå till vänster",
-            "next_scenario_id": 2
-          },
-          {
-            "option": "Gå till höger",
-            "next_scenario_id": 3
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "description": "Du följer den smala gången och kommer fram till ett rum fyllt med facklor och märkliga symboler på väggarna.",
-        "options": [
-          {
-            "option": "Undersök symbolerna",
-            "next_scenario_id": 4
-          },
-          {
-            "option": "Fortsätt framåt",
-            "next_scenario_id": 5
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "description": "Du kommer fram till en underjordisk flod. Vattnet är klart men strömt.",
-        "options": [
-          {
-            "option": "Försök att simma över",
-            "next_scenario_id": 6
-          },
-          {
-            "option": "Leta efter en bro",
-            "next_scenario_id": 7
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "description": "När du undersöker symbolerna aktiveras en fälla! Dörren bakom dig stängs, och du hör ett mekaniskt ljud som närmar sig.",
-        "options": [
-          {
-            "option": "Försök att öppna dörren",
-            "next_scenario_id": 8
-          },
-          {
-            "option": "Hitta en annan utgång",
-            "next_scenario_id": 9
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "description": "Du går framåt och hittar en trappa som leder uppåt.",
-        "options": [
-          {
-            "option": "Gå upp för trappan",
-            "next_scenario_id": 10
-          },
-          {
-            "option": "Gå tillbaka till korsningen",
-            "next_scenario_id": 1
-          }
-        ]
-      }
-    ]
-  }
-  
+  "scenarios": [
+    {
+      "id": 1,
+      "description": "Du står vid en korsning i labyrinten. Till vänster ser du en smal gång med ett svagt ljus i slutet, och till höger hör du ljudet av rinnande vatten.",
+      "options": [
+        {
+          "OptionsText": "Gå till vänster",
+          "next_scenario_id": 2
+        },
+        {
+          "OptionsText": "Gå till höger",
+          "next_scenario_id": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "description": "Du följer den smala gången och kommer fram till ett rum fyllt med facklor och märkliga symboler på väggarna.",
+      "options": [
+        {
+          "OptionsText": "Undersök symbolerna",
+          "next_scenario_id": 4
+        },
+        {
+          "OptionsText": "Fortsätt framåt",
+          "next_scenario_id": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "description": "Du kommer fram till en underjordisk flod. Vattnet är klart men strömt.",
+      "options": [
+        {
+          "OptionsText": "Försök att simma över",
+          "next_scenario_id": 6
+        },
+        {
+          "OptionsText": "Leta efter en bro",
+          "next_scenario_id": 7
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "description": "När du undersöker symbolerna aktiveras en fälla! Dörren bakom dig stängs, och du hör ett mekaniskt ljud som närmar sig.",
+      "options": [
+        {
+          "OptionsText": "Försök att öppna dörren",
+          "next_scenario_id": 8
+        },
+        {
+          "OptionsText": "Hitta en annan utgång",
+          "next_scenario_id": 9
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "description": "Du går framåt och hittar en trappa som leder uppåt.",
+      "options": [
+        {
+          "OptionsText": "Gå upp för trappan",
+          "next_scenario_id": 10
+        },
+        {
+          "OptionsText": "Gå tillbaka till korsningen",
+          "next_scenario_id": 1
+        }
+      ]
+    }
+  ]
+}

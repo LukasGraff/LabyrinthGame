@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj": {}
+    "e:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj": {}
   },
   "projects": {
-    "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj": {
+    "e:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj",
+        "projectUniqueName": "e:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj",
         "projectName": "LabyrinthGame.Core",
-        "projectPath": "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj",
+        "projectPath": "e:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\LabyrinthGame.Core.csproj",
         "packagesPath": "C:\\Users\\R1\\.nuget\\packages\\",
-        "outputPath": "E:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\obj\\",
+        "outputPath": "e:\\OneDrive - Brights\\TMP\\GroupProjects\\LabyrinthGame\\LabyrinthGame.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\R1\\AppData\\Roaming\\NuGet\\NuGet.Config"
