@@ -2,73 +2,265 @@
   "scenarios": [
     {
       "id": 1,
-      "description": "Du står vid en korsning i labyrinten. Till vänster ser du en smal gång med ett svagt ljus i slutet, och till höger hör du ljudet av rinnande vatten.",
+      "description": "You find yourself in a maze. To your left, a cold draft flows. To your right, you see a faint glimmer of light.",
       "options": [
         {
-          "OptionsText": "Gå till vänster",
+          "OptionsText": "Head towards the draft",
           "next_scenario_id": 2
         },
         {
-          "OptionsText": "Gå till höger",
+          "OptionsText": "Walk towards the light",
           "next_scenario_id": 3
         }
       ]
     },
     {
       "id": 2,
-      "description": "Du följer den smala gången och kommer fram till ett rum fyllt med facklor och märkliga symboler på väggarna.",
+      "description": "The draft grows stronger, leading you to a dark, narrow corridor.",
       "options": [
         {
-          "OptionsText": "Undersök symbolerna",
+          "OptionsText": "Enter the corridor",
           "next_scenario_id": 4
         },
         {
-          "OptionsText": "Fortsätt framåt",
+          "OptionsText": "Turn back and try another path",
           "next_scenario_id": 5
         }
       ]
     },
     {
       "id": 3,
-      "description": "Du kommer fram till en underjordisk flod. Vattnet är klart men strömt.",
+      "description": "The light reveals an old torch hanging on the wall beside a locked gate.",
       "options": [
         {
-          "OptionsText": "Försök att simma över",
+          "OptionsText": "Take the torch and look for a way to unlock the gate",
           "next_scenario_id": 6
         },
         {
-          "OptionsText": "Leta efter en bro",
+          "OptionsText": "Ignore the gate and move forward",
           "next_scenario_id": 7
         }
       ]
     },
     {
       "id": 4,
-      "description": "När du undersöker symbolerna aktiveras en fälla! Dörren bakom dig stängs, och du hör ett mekaniskt ljud som närmar sig.",
+      "description": "Inside the corridor, you find strange symbols on the walls glowing faintly.",
       "options": [
         {
-          "OptionsText": "Försök att öppna dörren",
+          "OptionsText": "Touch the symbols",
           "next_scenario_id": 8
         },
         {
-          "OptionsText": "Hitta en annan utgång",
+          "OptionsText": "Ignore them and keep moving",
           "next_scenario_id": 9
         }
       ]
     },
     {
       "id": 5,
-      "description": "Du går framåt och hittar en trappa som leder uppåt.",
+      "description": "Turning back, you stumble upon a hidden door slightly ajar.",
       "options": [
         {
-          "OptionsText": "Gå upp för trappan",
+          "OptionsText": "Enter the hidden door",
           "next_scenario_id": 10
         },
         {
-          "OptionsText": "Gå tillbaka till korsningen",
-          "next_scenario_id": 1
+          "OptionsText": "Close the door and move on",
+          "next_scenario_id": 11
         }
       ]
+    },
+    {
+      "id": 6,
+      "description": "The torch flickers, illuminating a secret passage to your left.",
+      "options": [
+        {
+          "OptionsText": "Enter the secret passage",
+          "next_scenario_id": 12
+        },
+        {
+          "OptionsText": "Stay on the main path",
+          "next_scenario_id": 13
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "description": "The corridor opens into a grand hall filled with shadows that seem to move.",
+      "options": [
+        {
+          "OptionsText": "Explore the hall",
+          "next_scenario_id": 14
+        },
+        {
+          "OptionsText": "Find an exit quickly",
+          "next_scenario_id": 15
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "description": "The symbols react to your touch, revealing a hidden stairway going down.",
+      "options": [
+        {
+          "OptionsText": "Descend the stairs",
+          "next_scenario_id": 16
+        },
+        {
+          "OptionsText": "Stay on this level",
+          "next_scenario_id": 17
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "description": "Moving forward, you come across a dark pool of water blocking your path.",
+      "options": [
+        {
+          "OptionsText": "Swim across the pool",
+          "next_scenario_id": 18
+        },
+        {
+          "OptionsText": "Look for another route",
+          "next_scenario_id": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "description": "Entering the hidden door, you find an ancient chest half-buried in the dirt.",
+      "options": [
+        {
+          "OptionsText": "Open the chest",
+          "next_scenario_id": 16
+        },
+        {
+          "OptionsText": "Leave it alone and proceed",
+          "next_scenario_id": 13
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "description": "Moving on, you find yourself in a hallway filled with mirrors that reflect strange versions of yourself.",
+      "options": [
+        {
+          "OptionsText": "Look into the mirrors",
+          "next_scenario_id": 17
+        },
+        {
+          "OptionsText": "Avoid the mirrors and hurry through",
+          "next_scenario_id": 14
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "description": "The passage leads to an underground river that flows swiftly.",
+      "options": [
+        {
+          "OptionsText": "Attempt to cross the river",
+          "next_scenario_id": 18
+        },
+        {
+          "OptionsText": "Search for a bridge",
+          "next_scenario_id": 15
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "description": "The main path takes you to a room with a single door, marked 'Final Trial.'",
+      "options": [
+        {
+          "OptionsText": "Enter the final trial",
+          "next_scenario_id": 19
+        },
+        {
+          "OptionsText": "Search for another exit",
+          "next_scenario_id": 20
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "description": "In the shadows, you see something glimmering faintly in the darkness.",
+      "options": [
+        {
+          "OptionsText": "Investigate the glimmering object",
+          "next_scenario_id": 16
+        },
+        {
+          "OptionsText": "Ignore it and find a way out",
+          "next_scenario_id": 18
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "description": "The exit leads you to a series of increasingly narrow passageways.",
+      "options": [
+        {
+          "OptionsText": "Squeeze through carefully",
+          "next_scenario_id": 19
+        },
+        {
+          "OptionsText": "Try to find a wider path",
+          "next_scenario_id": 20
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "description": "You find a hidden key that seems to radiate with a faint glow.",
+      "options": [
+        {
+          "OptionsText": "Take the key",
+          "next_scenario_id": 20
+        },
+        {
+          "OptionsText": "Leave it and move on",
+          "next_scenario_id": 19
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "description": "Looking into the mirrors, you feel yourself becoming dizzier as strange visions fill your mind.",
+      "options": [
+        {
+          "OptionsText": "Resist the visions and break free",
+          "next_scenario_id": 19
+        },
+        {
+          "OptionsText": "Give in to the visions",
+          "next_scenario_id": 18
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "description": "The path ahead becomes darker, and you sense a malevolent presence watching you.",
+      "options": [
+        {
+          "OptionsText": "Confront the presence",
+          "next_scenario_id": 19
+        },
+        {
+          "OptionsText": "Retreat and seek another route",
+          "next_scenario_id": 20
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "description": "As you continue, the maze seems to close in on you, and you feel trapped. The air grows cold, and darkness surrounds you completely. The journey ends here.",
+      "options": []
+    },
+    {
+      "id": 20,
+      "description": "After overcoming all challenges, you find a stairway leading up to an exit bathed in sunlight. You've successfully escaped the labyrinth!",
+      "options": []
     }
   ]
 }
