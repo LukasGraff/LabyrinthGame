@@ -1,32 +1,43 @@
 ﻿
-namespace LabyrinthGame.Core;
-class Program
+using LabyrinthGame.Core;
+using System;
+using System.IO;
+
+namespace LabyrinthGame.ConsoleApp
 {
-    static void Main()
+    public class Program
     {
-        // Ange filvägen till din JSON-fil
-        // string filePath = @"C:\Users\LukasGraff\OneDrive - Brights\TMP\GroupProjects\LabyrinthGame\Scenarios.json"; // Eller den fullständiga vägen till din JSON-fil
-
-       Console.WriteLine("Current Working Directory: " + Directory.GetCurrentDirectory()); 
-
-        string projectDirectory = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", ".."));
-        string filePath = Path.Combine(projectDirectory, "Scenarios.json");
-        Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
-        
-        // Ladda scenarier från filen
-        ScenarioCollection scenarios = JsonLoader.LoadScenariosFromFile(filePath);
-
-        if (scenarios != null)
+        static void Main()
         {
-            // Skriv ut alla scenarier och deras alternativ
-            foreach (var scenario in scenarios.Scenarios)
-            {
-                Console.WriteLine($"Scenario {scenario.Id}: {scenario.Description}");
+            Console.WriteLine("Hello friend, can you help me out of here? Press 'y' to start or 'n' to quit:");
+            
+            string? userInput = Console.ReadLine()?.ToLower();
 
-                foreach (var option in scenario.Options)
+            if (userInput == "y")
+            {
+                // Console.WriteLine("Current Working Directory: " + Directory.GetCurrentDirectory()); 
+
+                string projectDirectory = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", ".."));
+                string filePath = Path.Combine(projectDirectory, "Scenarios.json");
+               //  Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
+
+                // Ladda scenarier från filen med JsonLoader
+                ScenarioCollection? scenarios = JsonLoader.LoadScenariosFromFile(filePath);
+
+                if (scenarios != null)
                 {
-                    Console.WriteLine($"  - {option.OptionsText} (Next: {option.NextScenarioId})");
+                    // skappar en instance och kör spel
+                    Game game = new Game(scenarios);
+                    game.Start();
                 }
+                else
+                {
+                    Console.WriteLine("No scenarios found or file could not be loaded.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Goodbye!");
             }
         }
     }
