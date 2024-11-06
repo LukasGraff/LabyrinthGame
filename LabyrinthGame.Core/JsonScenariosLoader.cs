@@ -17,7 +17,7 @@ public class JsonLoader
             string jsonContent = File.ReadAllText(filePath);
 
             // Deserialisera JSON till ScenarioCollection
-            ScenarioCollection scenarios = JsonSerializer.Deserialize<ScenarioCollection>(jsonContent);
+            ScenarioCollection scenarios = JsonSerializer.Deserialize<ScenarioCollection>(jsonContent, new JsonSerializerOptions{PropertyNameCaseInsensitive=true});
             return scenarios;
         }
         catch (Exception ex)
