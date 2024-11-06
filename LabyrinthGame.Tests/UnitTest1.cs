@@ -10,35 +10,15 @@ public class LabyrinthGameTests
     [Fact]
     public void TestOpenLockedDoor()
     {
-        // Arrange
-        //(spelare valt en väg med en) låst dörr.
-        //kan öppnas med en en key.
-        //annars säg att spelaren får välja en annan väg.
-
-        Item.Key Key1 = new(); //Behöver att det finns en nyckel
-
-        Key1.hasKey = true; // ge nyckeln till spelaren
+        // arrange
+        var Door1 = new Core.Objective.LockedDoor();
          
-        
-        // Låst dörr:
-        Objective.LockedDoor Door1 = new(); // presentera ny låst dörr Door1
-        Door1.isLocked = true; // Dörren är låst.
-        // Act
+        // act
+        Door1.UnlockDoor();
 
-        if (Key1.hasKey==true)
-        {
-            Door1.isLocked = false; // Dörren upplåst
-            
-        } else
-        {
-            // door can't be opened cuz you dont have key1.
-        }
+        // assert
+        Door1.IsOpen.ShouldBeTrue();
 
-        //öppna dörren
-
-        // Assert
-        Door1.isLocked.ShouldBe(false);
-
-        //Presentera nästa val
     }
+
 }

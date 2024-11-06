@@ -5,8 +5,11 @@ public class Objective
 
 public class LockedDoor() // gör en klass av Door ifall man behöver flera olika dörrar i spelet
 {
-    public bool isLocked = true;
-    
+    public bool IsOpen { get; set; } = false;
 
+    public void UnlockDoor()
+    {
+        IsOpen=true;
+    }
 }
 }
