@@ -6,6 +6,8 @@ namespace LabyrinthGame.Core
 {
     public class Game
 {
+    
+    
     private ScenarioCollection _scenarios; // Privat variabel som lagrar alla scenarier
 
     public Game(ScenarioCollection scenarios)
@@ -19,10 +21,10 @@ namespace LabyrinthGame.Core
         PlayScenario(1); // Kör playscenario metoden
     }
 
-    private void PlayScenario(int scenarioId)
+    public void PlayScenario(int scenarioId)
     {
         var scenario = GetScenarioById(scenarioId); // hämtar scenariot baserat på ID
-        if (scenario == null || scenario.Options == null) // kontroll om null för options och scenario
+        if (scenario == null) // kontroll om null för options och scenario
         {
             Console.WriteLine("Scenario not found or has no options! Ending game."); // enkelt error meddeelande
             return; 
@@ -44,7 +46,7 @@ namespace LabyrinthGame.Core
         }
     }
 
-    private Scenario? GetScenarioById(int id)
+    public Scenario? GetScenarioById(int id)
     {
         // Returnerar scenariot som matchar det specifika ID:t eller null om det inte hittas
         return _scenarios.Scenarios?.Find(s => s.Id == id);
@@ -65,7 +67,7 @@ namespace LabyrinthGame.Core
         }
     }
 
-    private int GetPlayerChoice(int optionCount)
+    public int GetPlayerChoice(int optionCount)
     {
         Console.Write("Choose an option: "); //  spelare väljer ett alternativ
         if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= optionCount)
@@ -75,6 +77,13 @@ namespace LabyrinthGame.Core
         }
         return -1; 
     }
+
+public int TestTesting()
+{
+    int a =10;
+    return a;
+}
+
 }
 
 
